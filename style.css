@@ -1,0 +1,101 @@
+:root {
+  --bg: #f9f9f9;
+  --accent: #ffc23f;
+  --text: #222;
+  --button-bg: #000;
+  --button-hover: var(--accent);
+  --button-text: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.moves {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  font-size: 3rem;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+  color: #000;
+  transform: scale(1.1);
+}
+
+
+.score-space {
+  font-size: 1.2rem;
+  min-height: 1.5em;
+}
+
+.reset {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+.result-space {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  min-height: 4rem;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.result-text {
+  font-size: 1.6rem;
+  margin-top: 10px;
+  color: #222;
+}
+
+.emoji-battle {
+  font-size: 3rem;
+}
+
+.vs {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #888;
+}
+
